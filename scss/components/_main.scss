@@ -1,0 +1,475 @@
+/*-MAIN DE INDEX.HTML-*/
+/*SECTION MUNDO*/
+main{
+    .mundo{
+        padding: 10px;
+        text-align: center;
+        font-size: 25px;
+        /*IMAGEN*/
+        height: $altura-1;
+        /*FLEX*/
+        @extend %center;
+        /*IMAGEN*/
+        background-image: url("../img/fondo-mundo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        div{
+            h1{
+                color:$color-1;
+                font-family: "abril-fatface";
+                font-weight: 900;
+                font-size: 60px;
+            }
+            h2{
+                color: $color-1;
+                border-radius: 10px;
+                font-size: 20px;
+                margin-bottom: nth($margin-bottom, 3);
+                font-family: "abril-fatface";
+            }
+            a{
+                display: inline-block;
+                margin: 10px;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 10px;
+                background-color: $color-2;
+                color: $color-1;
+                transition: 1s;
+                &:hover{
+                    background-color: $color-1;
+                    color: $color-2;
+                }
+            }
+        }
+        div{
+            img{
+                border-radius: 200px 0 0 0px;
+                width: 500px;
+                height: 700px;
+            }
+        }
+    }
+}
+/*SECTION COMO NACIO LIBRA*/
+.nacimiento-libra{
+    @extend %center;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+    div{
+        width: 65%;
+        h3{
+            margin-bottom: nth($margin-bottom, 3);
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    img{
+        width: 390px;
+        margin-left: 20px;
+        margin-top: nth($margin-top, 2);
+        margin-bottom: nth($margin-bottom, 3);
+        transition: 1s;
+        border-radius: 5px;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 2px 2px 5px 2px rgb(255, 255, 255)
+        }
+    }
+}
+/*SECTION: QUE OFRECE LIBRA*/
+.oferta{
+        display: inline-block;
+        /*GRID*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 300px 300px 300px;
+        column-gap: 10px;
+        row-gap: 20px;
+        font-weight: 700;
+    div{
+        text-align: center;
+        border-radius: 10px;
+        transition: 1s;
+        transition-delay: 0.2s;
+        &:hover{
+            transform: translateY(-10px);
+        }
+        img{
+            width: 50px;
+            margin-top: nth($margin-top, 1);
+            margin-bottom: nth($margin-bottom, 1);
+        }
+        h3{
+            color: #2b2b2b;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        p{
+            margin: 25px;
+            font-size: 1rem;
+        }
+    }
+}
+/*MAIN CATALOGO*/
+.catalogo{
+    text-align: center;
+    height: $altura-1;
+    @extend %center;
+    /*IMAGEN*/
+    background-image: url("../img/fondo-catalogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .titulo-catalogo{
+        h1{
+            font-family: "abril-fatface";
+            font-weight: 800;
+            font-size: 40px;
+            color: $color-1;
+            margin-bottom: nth($margin-bottom, 4);
+            padding: 10px;
+            border-radius: 15px;
+            background-color: $color-2;
+            transition: 1s;
+            &:hover{
+                background-color: $color-1;
+                color: $color-2;
+            }
+        }
+        a{
+            color: $color-2;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 5px;
+            box-shadow: 0px 0px 5px 5px #d1d7dc;
+            transition:1s;
+            &:hover{
+                transform: translateY(-10px);
+                background-color: #464646;
+                color: $color-1;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.libros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    div{
+        text-align: center;
+        width: 220px;
+        height: 450px;
+        margin: 25px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 1s;
+        &:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        img{
+            width: 170px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        h3{
+            color: $color-4;
+            font-size: 20px;
+        }
+        h4{
+            color: rgb(73, 73, 73);
+            font-weight: bold;
+            margin-top: nth($margin-top, 1);
+            font-size: 15px;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        p{
+            margin-bottom: nth($margin-bottom, 1);
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: $color-1;
+            background-color:$color-2;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 1s;
+            &:hover{
+                color: $color-3 ;
+                background-color: $color-1;
+                transform: translateY(-15px);
+            }
+        }
+    }
+}
+/*MAIN GIFT CARD*/
+.titulo-giftcard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: $altura-1;
+    text-align: center;
+    /*IMAGEN*/
+    background-image: url("../img/fondo-giftcard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .titulo-principal{
+        h1{
+            font-family: "abril-fatface";
+            font-weight: bold;
+            font-size: 60px;
+            color: $color-1;
+            transition: 1s;
+            &:hover{
+                transform: translateY(-15px);
+            }
+        }
+        h2{
+            font-family: "abril-fatface";
+            padding: 10px;
+            border-radius: 20px;
+            color: $color-2;
+            font-size: 30px;
+        }
+    }
+}
+.giftcard{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 320px 320px 320px;
+    row-gap: 5px;
+    column-gap: 10px;
+    color: $color-1;
+    div{
+        margin-top: nth($margin-top, 2);
+        border-radius: 10px;
+        transition: 1.5s;
+        &:hover{
+            box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+            transform: scale(1.02);
+        }
+    }
+    img{
+        width: 150px;
+        margin-top: nth($margin-top, 1);
+        margin-bottom: nth($margin-bottom, 2);
+        margin-left: 10px;
+        transition: 1s;
+        border-radius: 5px;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    h3{
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 10px;
+        color:$color-2;
+    }
+    h4{
+        font-size: 15px;
+        color: $color-2;
+        margin-left: 10px;
+    }
+    p{
+        font-size: 12px;
+        margin-left: 10px;
+        color: $color-2;
+    }
+    a{
+        text-decoration: none;
+        background-color: $color-1;
+        color: $color-2;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: 1s;
+        margin-left:10px ;
+        box-shadow: 1px 1px 5px 1px rgb(47, 47, 47);
+        &:hover{
+            background-color: rgb(87, 87, 87);
+            color:$color-1 ;
+            border-radius: 10px 0px 10px;
+        }
+    }
+}
+/*MAIN OPINIONES DE EXPERTOS*/
+.titulo-review{
+    @include flex (flex, center, start, column);
+    height: $altura-1;
+    padding: 10px;
+    text-align: center;
+    /*IMAGEN*/
+    background-image: url("../img/fondo-reviews.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .titulo-review-2{
+        h1{
+            font-family: "abril-fatface";
+            font-weight: 800;
+            font-size: 70px;
+            padding: 15px;
+            color: $color-1;
+            transition: 1s;
+            &:hover{
+                color: $color-2;
+            }
+        }
+        h2{
+            font-family: "abril-fatface";
+            font-size: 20px;
+            color:$color-2;
+            transition: 1s;
+            &:hover{
+                color: $color-1;
+            }
+        }
+    }
+}
+.review{
+    @include flex (flex, center, center, column);
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow:1px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 2s;
+    &:hover{
+        transform: scale(1.04);
+    }
+    .contenido-opinion{
+        display: flex;
+        margin: 20px;
+        transition: 1s;
+        border-radius:15px ;
+        padding: 10px;
+        &:hover{
+            transform: translateY(-10px);
+            background-color: $color-2;
+        }
+        img{
+            width: 70px;
+            height: 75px;
+            border-radius: 50px;
+            margin-right: 20px;
+        }
+        .opinion{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+                color: #616161;
+                transition: 1s;
+                &:hover{
+                    color: $color-1;
+                }
+            }
+            p{
+                color: #777777ae;
+            }
+        }
+    }
+}
+/*MAIN CONTACTO-FORMULARIO*/
+.titulo-formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*IMAGEN FORMULARIO*/
+    background-image: url("../img/fondo-contacto.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: $altura-1;
+    margin-bottom: nth($margin-bottom, 1);
+    /*TEXTO*/
+    text-align: center;
+        div{
+            h1{
+                font-family: "abril-fatface";
+                font-weight: 800;
+                font-size: 70px;
+                color: $color-1;
+                transition:1.5s ;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            h2{
+                font-family: "abril-fatface";
+                font-size: 30px;
+                color: $color-1;
+            }
+        }
+    }
+.formulario{
+    @include flex (flex, center, center, column);
+    border: $color-4 solid 1px;
+    border-radius: 10px;
+    width: 500px;
+    padding: auto;
+    margin: auto;
+    div{
+        border-radius: 10px;
+        font-size: 18px;
+        color: $color-2;
+        margin:30px;
+        padding: 10px;
+        transition: 1s;
+        &:hover{
+            box-shadow: 1px 1px 5px 1px rgb(156, 156, 156);
+            transform: translateY(-10px);
+            background-color: rgb(137, 137, 137);
+        }
+        label{
+            margin-left: 10px;
+            transition: 1s;
+            &:hover{
+                color: $color-1;
+            }
+        }
+        input{
+            margin:10px;
+            width: 350px;
+            border: 1px;
+            border-radius: 5px;
+            border-color:rgb(120, 120, 120) ;
+            transition: 1s;
+            &:hover{
+                padding: 7px;
+            }
+        }
+    }
+    .enviar-resetear{
+        input{
+            width: 150px;
+            border: none;
+            transition: 1s;
+            &:hover{
+                background-color: #004494;
+                color: $color-1;
+                border-radius: 10px 0px 10px;
+            }
+        }
+    }
+}

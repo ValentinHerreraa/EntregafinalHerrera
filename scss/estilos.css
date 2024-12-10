@@ -1,0 +1,885 @@
+.nacimiento-libra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*SECTIONS DEL NAV*/
+.nav-link {
+  color: white;
+}
+
+.nav-link .active {
+  color: white;
+}
+
+/*MAIN DE INDEX HTML. SECTION: ACORDION*/
+.imagen {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.accordion-button:hover {
+  background-color: #b3b3b3;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: #b3b3b3;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #b3b3b3;
+  color: #333;
+}
+
+.accordion-button {
+  transition: 0.3s ease;
+  margin: 0px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/*SECTION: QUE OFRECE LIBRA*/
+.targeta {
+  background-color: rgb(152, 152, 152);
+}
+
+.envio {
+  background-color: rgb(121, 121, 121);
+}
+
+.etiqueta {
+  background-color: rgb(207, 207, 207);
+}
+
+/*HEADER DE TODAS LAS SECCIONES*/
+header {
+  position: sticky;
+  top: 0;
+}
+header nav {
+  background: black;
+  background: linear-gradient(18deg, rgb(0, 0, 0) 0%, rgb(114, 114, 122) 86%, rgb(145, 160, 163) 100%);
+}
+header nav div a img {
+  width: 40px;
+  margin-left: 30px;
+  margin-right: none;
+}
+header nav div ul li a {
+  width: 100px;
+  margin-left: 10px;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+header nav div ul li a:hover {
+  box-shadow: 1px 1px 5px 1px rgba(155, 155, 155, 0.755);
+  background-color: white;
+}
+header nav div .dropdown-menu:hover {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+header nav div .dropdown-menu a {
+  width: 300px;
+}
+header nav div .dropdown-menu a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+/*-MAIN DE INDEX.HTML-*/
+/*SECTION MUNDO*/
+main .mundo {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  /*IMAGEN*/
+  height: 830px;
+  /*FLEX*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*IMAGEN*/
+  background-image: url("../img/fondo-mundo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .mundo div h1 {
+  color: white;
+  font-family: "abril-fatface";
+  font-weight: 900;
+  font-size: 60px;
+}
+main .mundo div h2 {
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "abril-fatface";
+}
+main .mundo div a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+main .mundo div a:hover {
+  background-color: white;
+  color: black;
+}
+main .mundo div img {
+  border-radius: 200px 0 0 0px;
+  width: 500px;
+  height: 700px;
+}
+
+/*SECTION COMO NACIO LIBRA*/
+.nacimiento-libra {
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+}
+.nacimiento-libra div {
+  width: 65%;
+}
+.nacimiento-libra div h3 {
+  margin-bottom: 20px;
+}
+.nacimiento-libra div p {
+  font-size: 20px;
+}
+.nacimiento-libra img {
+  width: 390px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 1s;
+  border-radius: 5px;
+}
+.nacimiento-libra img:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 5px 2px rgb(255, 255, 255);
+}
+
+/*SECTION: QUE OFRECE LIBRA*/
+.oferta {
+  display: inline-block;
+  /*GRID*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px 300px 300px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 20px;
+  font-weight: 700;
+}
+.oferta div {
+  text-align: center;
+  border-radius: 10px;
+  transition: 1s;
+  transition-delay: 0.2s;
+}
+.oferta div:hover {
+  transform: translateY(-10px);
+}
+.oferta div img {
+  width: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.oferta div h3 {
+  color: #2b2b2b;
+  font-size: 30px;
+  font-weight: 700;
+}
+.oferta div p {
+  margin: 25px;
+  font-size: 1rem;
+}
+
+/*MAIN CATALOGO*/
+.catalogo {
+  text-align: center;
+  height: 830px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*IMAGEN*/
+  background-image: url("../img/fondo-catalogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.catalogo .titulo-catalogo h1 {
+  font-family: "abril-fatface";
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 40px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: black;
+  transition: 1s;
+}
+.catalogo .titulo-catalogo h1:hover {
+  background-color: white;
+  color: black;
+}
+.catalogo .titulo-catalogo a {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  box-shadow: 0px 0px 5px 5px #d1d7dc;
+  transition: 1s;
+}
+.catalogo .titulo-catalogo a:hover {
+  transform: translateY(-10px);
+  background-color: #464646;
+  color: white;
+  border-radius: 5px;
+}
+
+.libros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.libros div {
+  text-align: center;
+  width: 220px;
+  height: 450px;
+  margin: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1s;
+}
+.libros div:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.libros div img {
+  width: 170px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.libros div img:hover {
+  transform: scale(1.05);
+}
+.libros div h3 {
+  color: #22333b;
+  font-size: 20px;
+}
+.libros div h4 {
+  color: rgb(73, 73, 73);
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 15px;
+  transition: 1s;
+}
+.libros div h4:hover {
+  transform: scale(1.1);
+}
+.libros div p {
+  margin-bottom: 10px;
+}
+.libros div a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 1s;
+}
+.libros div a:hover {
+  color: orange;
+  background-color: white;
+  transform: translateY(-15px);
+}
+
+/*MAIN GIFT CARD*/
+.titulo-giftcard {
+  height: 830px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  /*IMAGEN*/
+  background-image: url("../img/fondo-giftcard.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.titulo-giftcard .titulo-principal h1 {
+  font-family: "abril-fatface";
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+  transition: 1s;
+}
+.titulo-giftcard .titulo-principal h1:hover {
+  transform: translateY(-15px);
+}
+.titulo-giftcard .titulo-principal h2 {
+  font-family: "abril-fatface";
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+  font-size: 30px;
+}
+
+.giftcard {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 320px 320px 320px;
+  row-gap: 5px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  color: white;
+}
+.giftcard div {
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: 1.5s;
+}
+.giftcard div:hover {
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+.giftcard img {
+  width: 50px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.giftcard h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.giftcard h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: black;
+}
+.giftcard p {
+  font-size: 15px;
+  margin: 10px;
+  color: black;
+  font-weight: bold;
+}
+.giftcard a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 1s;
+}
+.giftcard a:hover {
+  background-color: rgb(87, 87, 87);
+  color: white;
+  border-radius: 10px 0px 10px;
+  box-shadow: 1px 1px 5px 1px rgb(47, 47, 47);
+}
+.giftcard .gift-1 {
+  background-color: rgb(41, 41, 41);
+}
+.giftcard .gift-2 {
+  background-color: rgb(68, 68, 68);
+}
+.giftcard .gift-3 {
+  background-color: rgb(86, 86, 86);
+}
+.giftcard .gift-4 {
+  background-color: rgb(123, 123, 123);
+}
+.giftcard .gift-5 {
+  background-color: rgb(143, 143, 143);
+}
+.giftcard .gift-6 {
+  background-color: rgb(186, 186, 186);
+}
+
+/*MAIN OPINIONES DE EXPERTOS*/
+.titulo-review {
+  height: 830px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  /*IMAGEN*/
+  background-image: url("../img/fondo-reviews.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.titulo-review .titulo-review-2 h1 {
+  font-family: "abril-fatface";
+  font-weight: 800;
+  font-size: 70px;
+  padding: 15px;
+  color: white;
+  transition: 1s;
+}
+.titulo-review .titulo-review-2 h1:hover {
+  color: black;
+}
+.titulo-review .titulo-review-2 h2 {
+  font-family: "abril-fatface";
+  font-size: 20px;
+  color: black;
+  transition: 1s;
+}
+.titulo-review .titulo-review-2 h2:hover {
+  color: white;
+}
+
+.review {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 2s;
+}
+.review:hover {
+  transform: scale(1.04);
+}
+.review .contenido-opinion {
+  display: flex;
+  margin: 20px;
+  transition: 1s;
+  border-radius: 15px;
+  padding: 10px;
+}
+.review .contenido-opinion:hover {
+  transform: translateY(-10px);
+  background-color: black;
+}
+.review .contenido-opinion img {
+  width: 70px;
+  height: 75px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+.review .contenido-opinion .opinion {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.review .contenido-opinion .opinion h3 {
+  color: #616161;
+  transition: 1s;
+}
+.review .contenido-opinion .opinion h3:hover {
+  color: white;
+}
+.review .contenido-opinion .opinion p {
+  color: rgba(119, 119, 119, 0.6823529412);
+}
+
+/*MAIN CONTACTO-FORMULARIO*/
+.titulo-formulario {
+  /*IMAGEN FORMULARIO*/
+  background-image: url("../img/fondo-contacto.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 830px;
+  margin-bottom: 10px;
+  /*TEXTO*/
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.titulo-formulario div h1 {
+  font-family: "abril-fatface";
+  font-weight: 800;
+  font-size: 70px;
+  color: white;
+  transition: 1.5s;
+}
+.titulo-formulario div h1:hover {
+  transform: scale(1.2);
+}
+.titulo-formulario div h2 {
+  font-family: "abril-fatface";
+  font-size: 30px;
+  color: white;
+}
+
+.formulario {
+  border: #22333b solid 1px;
+  border-radius: 10px;
+  width: 500px;
+  padding: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formulario div {
+  border-radius: 10px;
+  font-size: 18px;
+  color: black;
+  margin: 30px;
+  padding: 10px;
+  transition: 1s;
+}
+.formulario div:hover {
+  box-shadow: 1px 1px 5px 1px rgb(156, 156, 156);
+  transform: translateY(-10px);
+  background-color: rgb(137, 137, 137);
+}
+.formulario div label {
+  margin-left: 10px;
+  transition: 1s;
+}
+.formulario div label:hover {
+  color: white;
+}
+.formulario div input {
+  margin: 10px;
+  width: 350px;
+  border: 1px;
+  border-radius: 5px;
+  border-color: rgb(120, 120, 120);
+  transition: 1s;
+}
+.formulario div input:hover {
+  padding: 7px;
+}
+.formulario .enviar-resetear input {
+  width: 150px;
+  border: none;
+  transition: 1s;
+}
+.formulario .enviar-resetear input:hover {
+  background-color: #004494;
+  color: white;
+  border-radius: 10px 0px 10px;
+}
+
+/*FOOTER DE TODAS LAS SECCIONES MENOS DE CONTACTO*/
+footer .contactanos {
+  border: black 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 760px;
+  border-radius: 10px;
+  width: 490px;
+  margin: auto;
+  margin-top: 30px;
+}
+footer .contactanos div {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 1s;
+}
+footer .contactanos div:hover {
+  box-shadow: 1px 1px 5px 1px rgb(208, 208, 208);
+  transform: scale(1.05);
+}
+footer .contactanos div h3 {
+  color: black;
+  font-size: 30px;
+}
+footer .contactanos div label {
+  font-size: 20px;
+  color: black;
+  margin: 10px;
+}
+footer .contactanos div input {
+  width: 280px;
+  margin: 5px;
+  padding: 3px;
+  border: solid 1px black;
+  border-radius: 10px;
+  transition: 1s;
+}
+footer .contactanos div input:hover {
+  border-radius: 0px 10px 0px 10px;
+}
+footer .contactanos div textarea {
+  width: 350px;
+  border: none;
+  border-radius: 10px;
+}
+footer .contactanos .submit-reset input {
+  width: 175px;
+  margin: 10px;
+  transition: 1s;
+  color: black;
+}
+footer .contactanos .submit-reset input:hover {
+  background-color: #004494;
+  border: white 1px solid;
+  transform: translateY(-10px);
+  border-radius: 0px 10px 0px 10px;
+  color: white;
+}
+footer .footer {
+  text-align: center;
+  height: 175px;
+  /*FLEX*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer div img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  transition: 1s;
+}
+footer .footer div img:hover {
+  transform: translateY(-15px);
+}
+footer .footer div p {
+  margin-top: 20px;
+  color: #7b7b7b;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 745px) {
+  header nav ul li a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 955px) {
+  .mundo {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .mundo div h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .mundo div a {
+    display: flex;
+  }
+}
+@media screen and (max-width: 395px) {
+  .mundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+/*NACIMIENTO-LIBRA*/
+@media screen and (max-width: 1200px) {
+  .nacimiento-libra div p {
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  .nacimiento-libra div h2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .nacimiento-libra div h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nacimiento-libra img {
+    display: none;
+  }
+}
+/*TARGETAS*/
+@media screen and (max-width: 955px) {
+  .oferta {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+  }
+}
+/*CATALOGO*/
+@media screen and (max-width: 510px) {
+  .catalogo .titulo-catalogo h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .catalogo .titulo-catalogo h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .catalogo .titulo-catalogo h2 {
+    font-size: 20px;
+  }
+}
+/*GIFTCARD*/
+@media screen and (max-width: 580px) {
+  .titulo-giftcard .titulo-principal h1 {
+    font-size: 45px;
+  }
+  .titulo-giftcard .titulo-principal h2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .giftcard {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    grid-template-rows: 300px 300px 300px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .giftcard {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    margin: 10px;
+  }
+}
+/*OPINIONES DE EXPERTOS*/
+@media screen and (max-width: 1110px) {
+  .titulo-review {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .titulo-review .titulo-review-2 h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .titulo-review .titulo-review-2 h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .review {
+    padding: 10px;
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .review .contenido-opinion {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+@media screen and (max-width: 565px) {
+  .review {
+    padding: 10px;
+    max-width: 400px;
+  }
+  .review .contenido-opinion .opinion {
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  .review .contenido-opinion .opinion h3 {
+    margin-bottom: 10px;
+  }
+  .review .contenido-opinion .opinion p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .review .contenido-opinion .opinion p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .titulo-formulario {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 460px) {
+  .titulo-formulario div h1 {
+    font-size: 40px;
+  }
+  .titulo-formulario div h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 505px) {
+  .formulario {
+    border: #222c5b solid 1px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  .formulario div input {
+    width: 250px;
+  }
+  .formulario .enviar-resetear input {
+    width: 200px;
+    border: none;
+  }
+}
+/*CONTACTANOS*/
+@media screen and (max-width: 475px) {
+  footer .contactanos {
+    width: 300px;
+  }
+  footer .contactanos div input {
+    width: 145px;
+  }
+  footer .contactanos div textarea {
+    width: 145px;
+  }
+  footer .contactanos div label {
+    font-size: 15px;
+  }
+}
+/*FOOTER*/
+@media screen and (max-width: 870px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer img {
+    width: 20px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

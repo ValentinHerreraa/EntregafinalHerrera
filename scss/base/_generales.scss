@@ -1,0 +1,53 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*SECTIONS DEL NAV*/
+.nav-link{
+    color: white;
+}
+.nav-link .active{
+    color: white;
+}
+/*MAIN DE INDEX HTML. SECTION: ACORDION*/
+.imagen{
+    width: 50px;
+    margin-bottom: 20px;
+}
+.accordion-button:hover {
+    background-color: #b3b3b3; 
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    background-color: #b3b3b3;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #b3b3b3;
+    color: #333;
+}
+
+.accordion-button {
+    transition:  0.3s ease;
+    margin: 0px;
+    font-size: 20px;
+    padding: 20px;
+
+}
+/*SECTION: QUE OFRECE LIBRA*/
+.targeta{
+    background-color: rgb(152, 152, 152);
+}
+.envio{
+    background-color: rgb(121, 121, 121);
+}
+.etiqueta{
+    background-color: rgb(207, 207, 207);
+}

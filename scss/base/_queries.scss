@@ -1,0 +1,205 @@
+@media screen and (max-width: 745px){
+    header nav ul li a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 955px){
+    .mundo{
+        height: 800px;
+    }
+}
+@media screen and (max-width:620px){
+    .mundo div h1{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:460px){
+    .mundo div a{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 395px){
+    .mundo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/*NACIMIENTO-LIBRA*/
+@media screen and (max-width: 1200px){
+    .nacimiento-libra div p{
+        margin-bottom: nth($margin-bottom, 4);
+        font-size: 15px;
+    }
+    .nacimiento-libra div h2{
+        margin-top: nth($margin-top, 1);
+        font-size: 20px;
+    }
+    .nacimiento-libra div h3{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:500px){
+    .nacimiento-libra img{
+        display: none;
+    }
+}
+
+
+/*TARGETAS*/
+@media screen and (max-width: 955px){
+    .oferta{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+    }
+}
+
+
+/*CATALOGO*/
+@media screen and (max-width:510px){
+    .catalogo .titulo-catalogo h1{
+        font-size: 30px;
+        margin-bottom: nth($margin-bottom, 3);
+    }
+}
+@media screen and (max-width: 400px){
+    .catalogo .titulo-catalogo h1{
+        font-size: 25px;
+        margin-bottom: nth($margin-bottom, 3);
+    }
+    .catalogo .titulo-catalogo h2{
+        font-size: 20px;
+    }
+}
+
+
+/*GIFTCARD*/
+@media screen and (max-width: 580px){
+    .titulo-giftcard .titulo-principal h1{
+        font-size:45px;
+    }
+    .titulo-giftcard .titulo-principal h2{
+        margin-top: nth($margin-top,1);
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1150px){
+    .giftcard{
+            grid-template-columns: repeat(2, 1fr) ;
+            height: auto;
+            grid-template-rows: 300px 300px 300px;
+            margin: 10px;
+    }
+}
+@media screen and (max-width: 800px){
+    .giftcard{
+        grid-template-columns: repeat(1, 1fr) ;
+        height: auto;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        margin: 10px;
+    }
+}
+
+/*OPINIONES DE EXPERTOS*/
+@media screen and (max-width: 1110px){
+    .titulo-review{
+        height: 800px;
+    }
+}
+@media screen and (max-width: 765px){
+    .titulo-review .titulo-review-2 h1{
+        font-size: 32px;
+        margin-bottom: nth($margin-bottom, 1);
+    }
+    .titulo-review .titulo-review-2 h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 410px){
+    .review{
+        padding: 10px;
+        max-width: 280px;
+    }
+}
+@media screen and (max-width: 635px){
+    .review .contenido-opinion{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+@media screen and (max-width: 565px){
+    .review{
+        padding: 10px;
+        max-width: 400px;
+    }
+    .review .contenido-opinion .opinion{
+        margin-bottom: nth($margin-bottom, 4);
+        font-size: 15px;
+    }
+    .review .contenido-opinion .opinion h3{
+        margin-bottom: nth($margin-bottom, 1);
+    }
+    .review .contenido-opinion .opinion p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 415px){
+    .review .contenido-opinion .opinion p{
+        font-size: 15px;
+    }
+    
+}
+
+
+@media screen and (max-width: 970px){
+    .titulo-formulario{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 460px){
+    .titulo-formulario div h1{
+        font-size: 40px;
+    }
+    .titulo-formulario div h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 505px){
+    .formulario{
+    border: #222c5b solid 1px;
+    border-radius: 10px;
+    width: 300px;
+    }
+    .formulario div input{
+        width: 250px;
+    }
+    .formulario .enviar-resetear input{
+        width: 200px;
+        border: none;
+    }
+}
+/*CONTACTANOS*/
+@media screen and (max-width: 475px){
+    footer .contactanos{
+    width: 300px;
+    }
+    footer .contactanos div input{
+        width: 145px;
+    }
+    footer .contactanos div textarea{
+        width: 145px;
+    }
+    footer .contactanos div label{
+        font-size: 15px
+    }
+}
+/*FOOTER*/
+@media screen and (max-width: 870px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer img{
+        width: 20px;
+    }
+}

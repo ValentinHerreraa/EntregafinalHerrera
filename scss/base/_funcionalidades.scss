@@ -1,0 +1,31 @@
+//*VARIABLES
+$color-1:white;
+$color-2:black;
+$color-3: orange;
+$color-4:#22333b;
+
+$altura-1:830px;
+$altura-2:840px;
+
+//*LISTAS
+$margin-bottom: 10px, 15px, 20px, 40px; 
+$margin-top: 10px, 20px, 30px;
+
+//*EXTEND
+%center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%center-2{
+    display: flex;
+    justify-content: center;
+}
+
+//*MIXIN
+@mixin flex ($flex, $justify, $center, $column){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $center;
+    flex-direction: $column;
+}

@@ -1,0 +1,89 @@
+/*FOOTER DE TODAS LAS SECCIONES MENOS DE CONTACTO*/
+footer{
+    .contactanos{
+        border: $color-2 1px solid;
+        @include flex (flex, space-around, center, column);
+        height: 760px;
+        border-radius: 10px;
+        width: 490px;
+        margin: auto;
+        margin-top:nth($margin-top, 3);
+        div{
+            @extend %center-2;
+            margin: 25px;
+            padding: 12px;
+            border-radius: 10px;
+            transition: 1s;
+            &:hover{
+                box-shadow: 1px 1px 5px 1px rgb(208, 208, 208);
+                transform: scale(1.05);
+            }
+            h3{
+                color: $color-2;
+                font-size: 30px;
+            }
+            label{
+                font-size: 20px;
+                color:$color-2;
+                margin: 10px;
+            }
+            input{
+                width: 280px;
+                margin: 5px;
+                padding: 3px;
+                border: solid 1px $color-2;
+                border-radius: 10px;
+                transition: 1s;
+                &:hover{
+                    border-radius: 0px 10px 0px 10px;
+                }
+            }
+            textarea{
+                width: 350px;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+        .submit-reset{
+            input{
+                width: 175px;
+                margin: 10px;
+                transition: 1s;
+                color: $color-2;
+                &:hover{
+                    background-color: #004494;
+                    border: $color-1 1px solid;
+                    transform: translateY(-10px);
+                    border-radius: 0px 10px 0px 10px;
+                    color: $color-1;
+                }
+            }
+        }
+    }
+    .footer{
+        text-align: center;
+        height: 175px;
+        /*FLEX*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            img{
+                width: 40px;
+                height: 40px;
+                margin: 10px;
+                transition: 1s;
+                &:hover{
+                    transform: translateY(-15px);
+                }
+            }
+        }
+        div{
+            p{
+                margin-top: nth($margin-top, 2);
+                color: #7b7b7b;
+                margin-bottom: nth($margin-bottom, 2);
+            }
+        }
+    }
+}
