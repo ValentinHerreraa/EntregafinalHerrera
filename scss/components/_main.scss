@@ -116,6 +116,22 @@ main{
         }
     }
 }
+.porque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    div{
+        margin: 50px;
+        h1{
+            padding: 10px;
+            color: rgb(139, 139, 139);
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
 /*MAIN CATALOGO*/
 .catalogo{
     text-align: center;
@@ -219,6 +235,22 @@ main{
         }
     }
 }
+.porque-catalogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    div{
+        margin: 50px;
+        h1{
+            padding: 10px;
+            color: rgb(139, 139, 139);
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
 /*MAIN GIFT CARD*/
 .titulo-giftcard{
     display: flex;
@@ -247,15 +279,21 @@ main{
             font-family: "abril-fatface";
             padding: 10px;
             border-radius: 20px;
-            color: $color-2;
+            background-color: $color-2;
+            color: $color-1;
             font-size: 30px;
+            transition: 1s;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.511);
+                color: rgba(0, 0, 0, 0.509);
+            }
         }
     }
 }
 .giftcard{
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(2, 1fr) ;
     grid-template-rows: 320px 320px 320px;
     row-gap: 5px;
     column-gap: 10px;
@@ -310,6 +348,22 @@ main{
             background-color: rgb(87, 87, 87);
             color:$color-1 ;
             border-radius: 10px 0px 10px;
+        }
+    }
+}
+.porque-giftcard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    div{
+        margin: 50px;
+        h1{
+            padding: 10px;
+            color: rgb(139, 139, 139);
+        }
+        p{
+            font-size: 20px
         }
     }
 }
@@ -390,6 +444,22 @@ main{
         }
     }
 }
+.porque-review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    div{
+        margin: 50px;
+        h1{
+            padding: 10px;
+            color: rgb(139, 139, 139);
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
 /*MAIN CONTACTO-FORMULARIO*/
 .titulo-formulario{
     display: flex;
@@ -416,9 +486,17 @@ main{
                 }
             }
             h2{
+                padding: 10px;
                 font-family: "abril-fatface";
                 font-size: 30px;
                 color: $color-1;
+                background-color: $color-2;
+                border-radius: 5px;
+                transition: 1.1s;
+                &:hover{
+                    background-color: $color-1;
+                    color: $color-2;
+                }
             }
         }
     }
@@ -470,6 +548,22 @@ main{
                 color: $color-1;
                 border-radius: 10px 0px 10px;
             }
+        }
+    }
+}
+.porque-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    div{
+        margin: 50px;
+        h1{
+            padding: 10px;
+            color: rgb(139, 139, 139);
+        }
+        p{
+            font-size: 20px;
         }
     }
 }

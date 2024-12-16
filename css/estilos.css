@@ -23,10 +23,30 @@ body {
 
 /*SECTIONS DEL NAV*/
 .nav-link {
-  color: white;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  transition: 1s;
+  margin: 10px;
+  padding: 10px;
 }
 
 .nav-link .active {
+  font-weight: bold;
+  color: black;
+  transition: 1s;
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: rgba(72, 72, 72, 0.344);
+  border-radius: 5px;
+  color: white;
+}
+
+.nav-link .active:hover {
+  background-color: rgba(72, 72, 72, 0.344);
+  border-radius: 5px;
   color: white;
 }
 
@@ -76,8 +96,7 @@ header {
   top: 0;
 }
 header nav {
-  background: black;
-  background: linear-gradient(18deg, rgb(0, 0, 0) 0%, rgb(114, 114, 122) 86%, rgb(145, 160, 163) 100%);
+  background-color: white;
 }
 header nav div a img {
   width: 40px;
@@ -220,6 +239,23 @@ main .mundo div img {
   font-size: 1rem;
 }
 
+.porque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.porque div {
+  margin: 50px;
+}
+.porque div h1 {
+  padding: 10px;
+  color: rgb(139, 139, 139);
+}
+.porque div p {
+  font-size: 20px;
+}
+
 /*MAIN CATALOGO*/
 .catalogo {
   text-align: center;
@@ -322,6 +358,23 @@ main .mundo div img {
   transform: translateY(-15px);
 }
 
+.porque-catalogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.porque-catalogo div {
+  margin: 50px;
+}
+.porque-catalogo div h1 {
+  padding: 10px;
+  color: rgb(139, 139, 139);
+}
+.porque-catalogo div p {
+  font-size: 20px;
+}
+
 /*MAIN GIFT CARD*/
 .titulo-giftcard {
   display: flex;
@@ -350,14 +403,20 @@ main .mundo div img {
   font-family: "abril-fatface";
   padding: 10px;
   border-radius: 20px;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 30px;
+  transition: 1s;
+}
+.titulo-giftcard .titulo-principal h2:hover {
+  background-color: rgba(255, 255, 255, 0.511);
+  color: rgba(0, 0, 0, 0.509);
 }
 
 .giftcard {
   display: grid;
   text-align: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 320px 320px 320px;
   row-gap: 5px;
   column-gap: 10px;
@@ -414,6 +473,23 @@ main .mundo div img {
   background-color: rgb(87, 87, 87);
   color: white;
   border-radius: 10px 0px 10px;
+}
+
+.porque-giftcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.porque-giftcard div {
+  margin: 50px;
+}
+.porque-giftcard div h1 {
+  padding: 10px;
+  color: rgb(139, 139, 139);
+}
+.porque-giftcard div p {
+  font-size: 20px;
 }
 
 /*MAIN OPINIONES DE EXPERTOS*/
@@ -499,6 +575,23 @@ main .mundo div img {
   color: rgba(119, 119, 119, 0.6823529412);
 }
 
+.porque-review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.porque-review div {
+  margin: 50px;
+}
+.porque-review div h1 {
+  padding: 10px;
+  color: rgb(139, 139, 139);
+}
+.porque-review div p {
+  font-size: 20px;
+}
+
 /*MAIN CONTACTO-FORMULARIO*/
 .titulo-formulario {
   display: flex;
@@ -525,9 +618,17 @@ main .mundo div img {
   transform: scale(1.2);
 }
 .titulo-formulario div h2 {
+  padding: 10px;
   font-family: "abril-fatface";
   font-size: 30px;
   color: white;
+  background-color: black;
+  border-radius: 5px;
+  transition: 1.1s;
+}
+.titulo-formulario div h2:hover {
+  background-color: white;
+  color: black;
 }
 
 .formulario {
@@ -583,6 +684,23 @@ main .mundo div img {
   border-radius: 10px 0px 10px;
 }
 
+.porque-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.porque-contacto div {
+  margin: 50px;
+}
+.porque-contacto div h1 {
+  padding: 10px;
+  color: rgb(139, 139, 139);
+}
+.porque-contacto div p {
+  font-size: 20px;
+}
+
 /*FOOTER DE TODAS LAS SECCIONES MENOS DE CONTACTO*/
 footer .contactanos {
   border: black 1px solid;
@@ -595,6 +713,7 @@ footer .contactanos {
   width: 490px;
   margin: auto;
   margin-top: 30px;
+  margin-bottom: 15px;
 }
 footer .contactanos div {
   margin: 25px;
@@ -651,6 +770,7 @@ footer .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: rgba(152, 152, 152, 0.403);
 }
 footer .footer div img {
   width: 40px;
@@ -702,7 +822,7 @@ footer .footer div p {
     font-size: 15px;
   }
   .nacimiento-libra div h2 {
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 20px;
   }
   .nacimiento-libra div h3 {
@@ -721,6 +841,16 @@ footer .footer div p {
     margin: 10px;
   }
 }
+@media screen and (max-width: 425px) {
+  .porque div p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .porque div h1 {
+    font-size: 20px;
+  }
+}
 /*CATALOGO*/
 @media screen and (max-width: 510px) {
   .catalogo .titulo-catalogo h1 {
@@ -734,6 +864,16 @@ footer .footer div p {
     margin-bottom: 20px;
   }
   .catalogo .titulo-catalogo h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .porque-catalogo div p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .porque-catalogo div h1 {
     font-size: 20px;
   }
 }
@@ -761,6 +901,16 @@ footer .footer div p {
     height: auto;
     grid-template-rows: 300px 300px 300px 300px 300px 300px;
     margin: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .porque-giftcard div p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .porque-giftcard div h1 {
+    font-size: 20px;
   }
 }
 /*OPINIONES DE EXPERTOS*/
@@ -810,6 +960,16 @@ footer .footer div p {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 425px) {
+  .porque-review div p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .porque-review div h1 {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 970px) {
   .titulo-formulario {
     flex-direction: column-reverse;
@@ -837,6 +997,16 @@ footer .footer div p {
     border: none;
   }
 }
+@media screen and (max-width: 425px) {
+  .porque-contacto div p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .porque-contacto div h1 {
+    font-size: 20px;
+  }
+}
 /*CONTACTANOS*/
 @media screen and (max-width: 475px) {
   footer .contactanos {
@@ -856,6 +1026,7 @@ footer .footer div p {
 @media screen and (max-width: 870px) {
   .footer {
     flex-direction: column;
+    height: 330px;
   }
   .footer img {
     width: 20px;
